@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232830;
+    overflow-x: hidden;
+}
+
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Horizontal padding for the entire navbar */
+    margin-top: 15px;
+}
+
+nav p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 40px;
+}
+
+.logo{
+    text-align: center;
+    display: block;
+    margin-left: 670px;
+    margin-top: 20px;
+}
+
+.mainHeading {
+    color: #FF7575;
+    font-family: Recursive;
+    font-size: 47px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.intro {
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center; /* Center-align the text */
+    color: white;
+    margin-top: -20px; /* Add margin to the top for spacing */
+    opacity: 0.7;
+}
+
+.line{
+    width: 1680px;
+    top: 244px;
+    left: -527px;
+    border: 3px;
+    opacity: 0.2;
+    border: 3px solid #4D4D4D;
+    background: #4D4D4D;
+}
+
+.v1{
+    width: 20px;
+    height: 20px;
+    top: 264px;
+    flex-shrink: 0;
+    margin-left:200px;
+    margin-top: 7px;
+}
+
+.v2{
+    width: 20px;
+    height: 20px;
+    top: 264px;
+    flex-shrink: 0;
+    margin-left: 2px;
+}
+
+.list li{
+    color: #909090;
+    font-family: Recursive;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+}
+
+.topics{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list{
+    display: flex;
+    gap: 20px;
+    margin-right: 290px;
+}
+
+.items {
+    display: grid;
+    /* For laptops and larger screens (min-width: 1024px) */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* For tablets (min-width: 768px) and smaller screens */
+    @media (max-width: 1023px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* For small phones (max-width: 767px) */
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #0F1217;
+    border-radius: 22px;
+    padding: 20px;
+    width: 390px;
+    height: 439px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mainPic{
+    width: 337.08px;
+    height: 160px;
+    border-radius: 22px;
+}
+
+.card h3 {
+    color: #0F1217;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 337.08px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #0F1217;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 326.726px;
+    margin-bottom: 20px;
+}
+
+.card .info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0F1217;
+}
+
+.info img{
+    margin-top: -16px;
+}
+
+.pagination {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.pagination ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.pagination p {
+    color: #909090;
+    font-family: Recursive;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pagination ul li {
+    text-align: center;
+    font-family: Recursive;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pagination ul span {
+    color: #FF7575;
+    font-family: Recursive;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: overline #FF7575; /* Added text-decoration property for overline */
+}
+
+.index{
+    color: #909090;
+}
+
+footer{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 90px;
+    justify-content: space-between;
+    height: 200px;
+}
+
+footer div{
+    display: flex;
+    gap: 10px;
+}
+
+footer div p{
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btn1{
+    width: 130px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #4699E0;
+    border: none;
+    color: white;
+}
+
+.btn2{
+    width: 221px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #4699E0;
+    border: none;
+    color: white;
+    margin-right: 110px;
+}
+
+@media (max-width: 1023px) {
+    /* Styles for tablets and smaller screens */
+    .nav ul li {
+        margin-right: 20px; /* Reduce the margin between navigation links */
+    }
+
+    .logo {
+        margin-left: 20px; /* Adjust the logo's margin */
+    }
+
+    .intro {
+        font-size: 18px; /* Decrease the font size of the intro text */
+    }
+
+    .line {
+        width: 100%; /* Make the horizontal line full width */
+    }
+
+    .topics {
+        margin-right: 20px; /* Adjust the margin for the topics section */
+    }
+
+    .list li {
+        font-size: 20px; /* Adjust the font size of topic items */
+    }
+
+    .items {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for articles */
+        margin-left: 20px; /* Adjust the margin for the articles */
+    }
+
+    .card {
+        width: 100%; /* Make the article cards full width */
+        margin: 0 0 20px 0; /* Remove margin on the right and add margin at the bottom */
+    }
+
+    .mainPic {
+        width: 100%; /* Make the article images full width */
+    }
+
+    .card h3 {
+        font-size: 18px; /* Decrease the font size of article titles */
+    }
+
+    .card p {
+        font-size: 16px; /* Decrease the font size of article text */
+    }
+
+    .info img {
+        margin-top: 0; /* Remove the negative margin on article info images */
+    }
+
+    .pagination {
+        margin-top: 30px; /* Adjust the margin at the top of the pagination */
+    }
+}
+
+@media (max-width: 767px) {
+    /* Styles for small phones */
+    .nav p {
+        font-size: 20px; /* Decrease the font size of the logo */
+    }
+
+    .nav ul li {
+        font-size: 20px; /* Decrease the font size of navigation links */
+        margin-right: 10px; /* Further reduce the margin between navigation links */
+    }
+
+    .logo {
+        margin-left: 10px; /* Further adjust the logo's margin */
+    }
+
+    .mainHeading {
+        font-size: 36px; /* Decrease the font size of the main heading */
+        line-height: 60px; /* Adjust line height for the main heading */
+    }
+
+    .intro {
+        font-size: 16px; /* Decrease the font size of the intro text */
+    }
+
+    .line {
+        top: 204px; /* Adjust the position of the horizontal line */
+    }
+
+    .topics {
+        margin-right: 10px; /* Further adjust the margin for the topics section */
+    }
+
+    .list li {
+        font-size: 18px; /* Decrease the font size of topic items */
+    }
+
+    .items {
+        grid-template-columns: repeat(1, 1fr); /* Change to 1 column for articles */
+        margin-left: 10px; /* Further adjust the margin for the articles */
+    }
+
+    .card {
+        width: 100%; /* Make the article cards full width */
+        margin: 0 0 20px 0; /* Remove margin on the right and add margin at the bottom */
+    }
+
+    .mainPic {
+        width: 100%; /* Make the article images full width */
+        height: auto; /* Automatically adjust the height */
+    }
+
+    .card h3 {
+        font-size: 24px; /* Adjust the font size of article titles */
+    }
+
+    .card p {
+        font-size: 14px; /* Decrease the font size of article text */
+    }
+
+    .info img {
+        margin-top: 0; /* Remove the negative margin on article info images */
+    }
+
+    .pagination {
+        margin-top: 30px; /* Adjust the margin at the top of the pagination */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer content for small phones */
+        align-items: center; /* Center-align footer content */
+    }
+
+    .btn1 {
+        width: 100%; /* Make the button full width */
+        margin: 10px 0; /* Add margin at the top and bottom */
+    }
+
+    .btn2 {
+        width: 100%; /* Make the button full width */
+    }
+}
